@@ -1,5 +1,5 @@
 # HRM-app
-# A fully functional MEAN STACK HRM app with proper authentication &amp; checkin checkout 
+A fully functional MEAN STACK HRM app with proper authentication &amp; checkin checkout 
 
 # run same command in both angular app & outside the angular app
 **1) run command npm init**
