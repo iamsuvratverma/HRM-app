@@ -1,0 +1,62 @@
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+
+<!-- <div class="container">
+    <div class="row">
+        <h2>Login</h2>
+        <hr/>
+    </div>
+      <div class="row">
+           <div class="col-sm-6">
+              <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="stname" placeholder="Enter Email"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="stname" placeholder="Enter Password"/>
+                  </div>
+                <br>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+                    <p>New user ?? <a href="/register">Register</a></p>
+                  </div>
+       
+                </form>
+           </div>
+      </div>
+  </div> -->
+
+<body>
+  <h1>Welcome to <span>MedEX</span></h1>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form>
+    <h3>Login </h3>
+
+  <p class="enter"><input type="text" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" id="stname"
+    placeholder="Enter Email" />
+</p>
+
+    <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="stname"
+      placeholder="Enter Password" />
+
+      <input type="checkbox" [(ngModel)]="checkintm" [ngModelOptions]="{standalone: true}" id="password-checkbox" (change)="checkin()"/>
+      <label for="password-checkbox" class="checkbox-label">check-in</label>
+    
+      
+
+    <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+    <div class="reg">
+      <p class="reg1">Don't have an account??<a href="register">Signup</a></p>
+    </div>
+
+  </form>
+
+</body>
+<!-- partial -->

@@ -1,0 +1,86 @@
+<!-- <div class="card">
+            <h1>Student Registation</h1>
+    
+    <form>
+        <div class="form-group">
+          <label>First name</label>
+          <input type="text" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" class="form-control" id="stname" placeholder="Enter Name">
+        </div>
+
+        <div class="form-group">
+            <label>Last name</label>
+            <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}" class="form-control" id="stname" placeholder="Enter Name">
+          </div>
+    
+        <div class="form-group">
+          <label>email</label>
+          <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="course" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+            <label>password</label>
+            <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="fee" placeholder="Enter password">
+          </div>
+
+        <button type="submit" class="btn btn-primary mt-4" (click)="save()" >Submit </button>
+        <p>New user ?? <a href="">Login</a></p>
+      </form>
+    </div> -->
+
+<body>
+  <h1>Welcome to <span>MedEX</span></h1>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form>
+    <h3>Signup</h3>
+    <input type="text" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" id="stname"
+      placeholder="Enter First Name">
+
+    <input type="text" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}" id="stname"
+      placeholder="Enter Last Name">
+
+    <input type="age" placeholder="Age" [(ngModel)]="age" [ngModelOptions]="{standalone: true}" id="stname">
+
+    <input type="text" placeholder="Contact Number" [(ngModel)]="num" [ngModelOptions]="{standalone: true}" id="stname">
+
+    <!-- <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" id="course" placeholder="Enter email"> -->
+      <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" id="course" placeholder="Enter email" name="email" #emailInput="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+      <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" >
+        <span class="error-message" *ngIf="emailInput.hasError('required')">*Email is required</span>
+        <span  class="error-message"*ngIf="emailInput.hasError('pattern')">Invalid email format</span>
+      </div>
+      
+
+    <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" placeholder="Enter password">
+
+    <div class="select-container">
+      <label for="gender1">Gender:</label>
+      <select [(ngModel)]="gender" [ngModelOptions]="{standalone: true}" id="stname">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="select-container doctor">
+      <label for="gender2">Department:</label>
+      <select [(ngModel)]="dpt" [ngModelOptions]="{standalone: true}" id="stname">
+        <option value="">Select</option>
+        <option value="Orthopaedic">Orthopaedic</option>
+        <option value="Anesthesiology">Anesthesiology</option>
+        <option value="Radiologist">Radiologist</option>
+        <option value="Endocrinologist">Endocrinologist</option>
+        <option value="Cardiologist">Cardiologist</option>
+        <!-- <option value=" Orthopedic Surgeon"> Orthopedic Surgeon</option>  -->
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4" (click)="save()">Submit </button>
+    <div class="reg">
+      <p class="reg1">Already have an account ?<a href="/">Login</a></p>
+    </div>
+  </form>
+</body>

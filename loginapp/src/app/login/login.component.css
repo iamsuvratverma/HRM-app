@@ -1,0 +1,211 @@
+
+body {
+  background-color: #ffffff;
+}
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#5073fb,
+          #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+
+.shape:last-child {
+  background: linear-gradient(to right,
+          #ff512f,
+          #f09819);
+  right: -70px;
+  bottom: -80px;
+}
+
+form {
+  height: 480px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: 'Poppins', sans-serif;
+  /* color: rgba(7, 7, 7, 0.873);  */
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.reg1{
+  font-size: 15px;
+  margin-left: 35px;
+  margin-top: 38px;
+  text-decoration: none;
+}
+
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  color: rgba(7, 7, 7, 0.873);
+}
+
+input {
+  display: block;
+  color: #080710;
+  border-bottom: rgba(157, 154, 154, 0.873) 0.1em solid !important;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 1px;
+  padding: 0 1%;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  box-shadow: none; /* Remove box shadow */
+}
+
+input:focus {
+  border-color: rgba(252, 252, 252, 0); /* Set border color to transparent */
+}
+
+
+
+
+::placeholder {
+  color: #e5e5e5;
+  color: rgba(7, 7, 7, 0.873);
+  /* border-bottom: rgba(7, 7, 7, 0.873) solid 1px; */
+}
+
+button {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  border: rgba(172, 171, 171, 0.873) solid 0.1em !important;
+  color: #080710;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5073fb;
+  color: #ffffff;
+}
+
+.social {
+  margin-top: 30px;
+  display: flex;
+}
+
+.social div {
+  /* border: 2px solid red !important; */
+  width: 150px;
+  border-radius: 3px;
+  padding: 10px 10px 10px 5px;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #000000;
+  text-align: center;
+}
+
+.social div:hover {
+  background-color: #5073fb;
+  color: #ffffff;
+}
+
+.social .fb {
+  margin-left: 25px;
+}
+
+.social i {
+  margin-right: 4px;
+}
+
+h1 {
+  /* color: #5073fb; */
+  margin-top: 2%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 50px;
+  text-align: center;
+}
+
+span{
+  color: #fa572c;
+}
+
+/* check in */
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox */
+.checkbox-label {
+  position: relative;
+  top: 20px;
+  padding-left: 25px; /* Adjust this value based on your design */
+  cursor: pointer;
+}
+
+/* Create the visual checkbox */
+.checkbox-label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px; /* Size of the checkbox */
+  height: 16px; /* Size of the checkbox */
+  border: 1px solid #aaa; /* Border color */
+  background-color: #fff; /* Background color */
+}
+
+/* Style the checked state */
+input[type="checkbox"]:checked + .checkbox-label:before {
+  background-color: #2196F3; /* Change color when checked */
+}
+
+/* Create the checkmark */
+.checkbox-label:after {
+  content: "";
+  position: absolute;
+  top: 4px; /* Adjust this value based on your design */
+  left: 5px; /* Adjust this value based on your design */
+  width: 6px; /* Width of the checkmark */
+  height: 12px; /* Height of the checkmark */
+  border: solid #fff; /* Color of the checkmark */
+  border-width: 0 2px 2px 0; /* Shape of the checkmark */
+  transform: rotate(45deg); /* Rotate the checkmark */
+  display: none;
+}
+
+/* Show the checkmark when checkbox is checked */
+input[type="checkbox"]:checked + .checkbox-label:after {
+  display: block;
+}
