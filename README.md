@@ -9,7 +9,7 @@ A fully functional MEAN STACK HRM app with proper backend-frontend & it have pro
 
 **make a database in mongodb with name "my database" with collection "students" then connect it**
 
-Our website:-
+# Our website visuals:-
 
 ![image](https://github.com/user-attachments/assets/201557cb-4e63-48dd-a878-f640600d30de)
 
