@@ -15,6 +15,8 @@ MedEX a fully functional MEAN STACK HRM app with proper backend-frontend & it ha
 3. User can checkin once in day & logout whenever want (Saved in Db with proper time & date)
 4. If you trying to checkin again it will show you An alert "You have already checked in today"
 
+
+
 ![image](https://github.com/user-attachments/assets/201557cb-4e63-48dd-a878-f640600d30de)
 
 ![image](https://github.com/user-attachments/assets/eb848ceb-20ec-4ccb-997f-7fd3c3cabd05)
