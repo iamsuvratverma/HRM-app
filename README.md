@@ -13,6 +13,6 @@ A fully functional MEAN STACK HRM app with proper backend-frontend & it have pro
 
 ![image](https://github.com/user-attachments/assets/201557cb-4e63-48dd-a878-f640600d30de)
 
-![image](https://github.com/user-attachments/assets/eb848ceb-20ec-4ccb-997f-7fd3c3cabd05
+![image](https://github.com/user-attachments/assets/eb848ceb-20ec-4ccb-997f-7fd3c3cabd05)
 
 ![image](https://github.com/user-attachments/assets/973c6c9b-8b37-4ab3-8d67-02edfabd9139)
